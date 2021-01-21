@@ -29,7 +29,6 @@ def test_check_wrong_file_path(census_analyzer, actual):
         census_analyzer.get_count(actual,1)
 
 
-
 # Test case 1.4-file is correct but delimiter incorrect return exception
 @pytest.mark.parametrize("actual",
                          ["./IndiaStateCensusWrongDelimiter.csv", "./StateCensus.csv", "./IndiaStateCensusDelimiter.csv"])
